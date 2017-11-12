@@ -35,9 +35,9 @@ console.log(currentLine(katzDeliLine)); // "The line is currently: 1. Ada, 2. Gr
 
 console.log(nowServing(katzDeliLine)); // "Currently serving Ada."
 console.log(takeANumber(katzDeliLine, "Matz")); // "3"
- 
+
 console.log(currentLine(katzDeliLine)); // "The line is currently: 1. Grace, 2. Kent, 3. Matz"
- 
+
 console.log(nowServing(katzDeliLine)); // "Currently serving Grace."
- 
+
 console.log(currentLine(katzDeliLine)); // "The line is currently: 1. Kent, 2. Matz"
