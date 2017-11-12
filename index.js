@@ -5,23 +5,23 @@ function takeANumber(line,name){
   return `Welcome, ${name}. You are number ${line.indexOf(name) + 1} in line.`
 }
 
-function nowServing(){
-  if(katzDeliLine.length > 0){
-    var serving = katzDeliLine.shift()
+function nowServing(line){
+  if(line.length > 0){
+    var serving = line.shift()
     return `Currently serving ${serving}`
   } else {
     return "There is nobody waiting to be served!"
   }
 }
 
-function currentLine() {
-  if(katzDeliLine.length > 0){
+function currentLine(line) {
+  if(line.length > 0){
     var output = "The line is currently: "
-    for(var i = 0; i < katzDeliLine.length; i++){
-      if(i === katzDeliLine.length-1){
-        return output + (i+1).toString() + '. ' + katzDeliLine[i]
+    for(var i = 0; i < line.length; i++){
+      if(i === line.length-1){
+        return output + (i+1).toString() + '. ' + line[i]
       }
-      output += (i+1).toString() + '. ' + katzDeliLine[i] + ", "
+      output += (i+1).toString() + '. ' + line[i] + ", "
     }
   } else {
     return "The line is currently empty."
