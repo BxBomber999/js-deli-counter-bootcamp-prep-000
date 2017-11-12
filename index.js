@@ -1,4 +1,3 @@
-var katzDeli = [];
 var katzDeliLine = [];
 
 function takeANumber(line,name){
@@ -20,7 +19,6 @@ function currentLine() {
     var output = "The line is currently: "
     for(var i = 0; i < katzDeliLine.length; i++){
       if(i === katzDeliLine.length-1){
-        console.log(output + (i+1).toString() + ". " + katzDeliLine[i])
         return output + (i+1).toString() + '. ' + katzDeliLine[i]
       }
       output += (i+1).toString() + '. ' + katzDeliLine[i] + ","
