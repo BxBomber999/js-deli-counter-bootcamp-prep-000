@@ -21,7 +21,7 @@ function currentLine() {
       if(i === katzDeliLine.length-1){
         return output + (i+1).toString() + '. ' + katzDeliLine[i]
       }
-      output += (i+1).toString() + '. ' + katzDeliLine[i] + ","
+      output += (i+1).toString() + '. ' + katzDeliLine[i] + ", "
     }
   } else {
     return "The line is currently empty."
